@@ -1075,7 +1075,7 @@ class FPDF(object):
             self.set_xy(*location)  # restore location
             return text_cells
 
-        return page_break_triggered
+        return page_break_triggered, text_cells
 
     @check_page
     def write(self, h, txt = '', link = ''):
